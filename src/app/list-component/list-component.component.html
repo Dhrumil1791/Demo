@@ -1,0 +1,14 @@
+<div class="contain">
+    <h1>{{msg}}</h1>
+    <button type="button" class="btn btn-primary" (click)="generatePdf()">Export PDF</button>
+    <ul>
+      <li *ngFor="let listArrays of listArray">
+        <span>
+          {{listArrays.id}}
+        </span>
+        <span>
+          {{listArrays.title}}
+        </span>
+      </li>
+    </ul>
+</div>
